@@ -1,0 +1,165 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+:root {
+  --delay-01: 2s;
+  --delay-02: 4s;
+  --delay-03: 6s;
+  --delay-04: 8s;
+  --delay-05: 10s;
+  --delay-06: 12s;
+  --delay-07: 14s;
+  --delay-08: 16s;
+  --delay-09: 18s;
+  --delay-10: 20s;
+  --delay-11: 22s;
+  --delay-12: 24s;
+  --duration: 1s;
+}
+
+body {
+  background: url("./assets/fundo.svg") no-repeat top center;
+  background-size: cover;
+  background-attachment: fixed;
+  padding: 12rem 2.4rem 4rem;
+}
+
+.all-holes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 4%;
+}
+
+.hole {
+  height: 9.6rem;
+  width: 46%;
+  background-image: url("./assets/toupeira0.svg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+
+  /* transition: all 0.3s; */
+}
+
+/* ===========  Animations  =========== */
+
+.all-holes div:nth-of-type(1) {
+  animation: showMole var(--duration) ease-in-out var(--delay-02);
+}
+
+.all-holes div:nth-of-type(2) {
+  animation: showMole var(--duration) ease-in-out var(--delay-08);
+}
+
+.all-holes div:nth-of-type(3) {
+  animation: showMole var(--duration) ease-in-out var(--delay-03);
+}
+
+.all-holes div:nth-of-type(4) {
+  animation: showMole var(--duration) ease-in-out var(--delay-07);
+}
+
+.all-holes div:nth-of-type(5) {
+  animation: showMole var(--duration) ease-in-out var(--delay-06);
+}
+
+.all-holes div:nth-of-type(6) {
+  animation: showMole var(--duration) ease-in-out var(--delay-10);
+}
+
+.all-holes div:nth-of-type(7) {
+  animation: showMole var(--duration) ease-in-out var(--delay-12);
+}
+
+.all-holes div:nth-of-type(8) {
+  animation: showMole var(--duration) ease-in-out var(--delay-09);
+}
+
+.all-holes div:nth-of-type(9) {
+  animation: showMole var(--duration) ease-in-out var(--delay-04);
+}
+
+.all-holes div:nth-of-type(10) {
+  animation: showMole var(--duration) ease-in-out var(--delay-01);
+}
+
+.all-holes div:nth-of-type(11) {
+  animation: showMole var(--duration) ease-in-out var(--delay-05);
+}
+
+.all-holes div:nth-of-type(12) {
+  animation: showMole var(--duration) ease-in-out var(--delay-11);
+}
+
+/* ===========  Keyframes  =========== */
+
+@keyframes showMole {
+  0% {
+    background: url("./assets/toupeira0.svg") no-repeat center center;
+    background-size: contain;
+  }
+
+  17% {
+    background: url("./assets/toupeira1.svg") no-repeat center center;
+    background-size: contain;
+  }
+
+  33% {
+    background: url("./assets/toupeira2.svg") no-repeat center center;
+    background-size: contain;
+  }
+
+  50% {
+    background: url("./assets/toupeira3.svg") no-repeat center center;
+    background-size: contain;
+  }
+
+  67% {
+    background: url("./assets/toupeira4.svg") no-repeat center center;
+    background-size: contain;
+  }
+
+  83% {
+    background: url("./assets/toupeira5.svg") no-repeat center center;
+    background-size: contain;
+  }
+
+  100% {
+    background: url("./assets/toupeira0.svg") no-repeat center center;
+    background-size: contain;
+
+  }
+}
+
+/* ===========  Responsivo  =========== */
+
+@media (min-width: 540px) {
+  body {
+    padding: 16rem 4rem 4rem;
+  }
+
+  .hole {
+    height: 13.6rem;
+    width: 28%;
+  }
+}
+
+@media (min-width: 991px) {
+  body {
+    padding: 24rem 16.8rem 2rem;
+  }
+
+  .all-holes {
+    gap: 4%;
+  }
+
+  .hole {
+    height: 17.6rem;
+    width: 21.5%;
+  }
+}
