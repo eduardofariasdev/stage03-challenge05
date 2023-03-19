@@ -25,7 +25,7 @@ body {
   background: url("./assets/fundo.svg") no-repeat top center;
   background-size: cover;
   background-attachment: fixed;
-  padding: 12rem 2.4rem 4rem;
+  padding: 24rem 16.8rem 2rem;
 }
 
 .all-holes {
@@ -36,14 +36,14 @@ body {
 }
 
 .hole {
-  height: 9.6rem;
-  width: 46%;
+  height: 17.6rem;
+  width: 21.5%;
   background-image: url("./assets/toupeira0.svg");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: contain;
 
-  /* transition: all 0.3s; */
+  transition: all 0.1s;
 }
 
 /* ===========  Animations  =========== */
@@ -138,7 +138,7 @@ body {
 
 /* ===========  Responsivo  =========== */
 
-@media (min-width: 540px) {
+@media (max-width: 991px) {
   body {
     padding: 16rem 4rem 4rem;
   }
@@ -149,9 +149,9 @@ body {
   }
 }
 
-@media (min-width: 991px) {
+@media (max-width: 540px) {
   body {
-    padding: 24rem 16.8rem 2rem;
+    padding: 12rem 2.4rem 4rem;
   }
 
   .all-holes {
@@ -159,7 +159,7 @@ body {
   }
 
   .hole {
-    height: 17.6rem;
-    width: 21.5%;
+    height: 8rem;
+    width: 46%;
   }
 }
